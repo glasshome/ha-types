@@ -1,0 +1,23 @@
+{
+  "name": "@glasshome/ha-types",
+  "version": "0.1.0",
+  "description": "TypeScript type definitions for Home Assistant entities, services, and WebSocket API",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.ts",
+      "import": "./dist/index.ts"
+    }
+  },
+  "types": "dist/index.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glasshome-labs/ha-types.git"
+  },
+  "author": "GlassHome Labs",
+  "license": "MIT"
+}
