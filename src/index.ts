@@ -10,40 +10,71 @@
 // ============================================
 // DOMAIN TYPES
 // ============================================
-export { type Domain } from "./domains";
-export { KNOWN_DOMAINS } from "./domains";
-// ============================================
-// SERVICE TYPES
-// ============================================
-export { type ServiceCall, type ServiceName, type Services } from "./services";
-export type * from "./services";
-// ============================================
-// EVENT TYPES
-// ============================================
-export { type CoreEventType, type EventCallServiceData, type EventStateChangedData, type HAEvent } from "./events";
-// ============================================
-// ENTITY REGISTRY TYPES
-// ============================================
-export { type EntityRegistryEntry, type RegistryEntryDisabler, type RegistryEntryHider, type EntityCategory } from "./entity-registry";
-// ============================================
-// DEVICE REGISTRY TYPES
-// ============================================
-export { type DeviceEntry, type DeviceEntryDisabler, type DeviceEntryType } from "./device-registry";
-export { CONNECTION_BLUETOOTH, CONNECTION_NETWORK_MAC, CONNECTION_UPNP, CONNECTION_ZIGBEE } from "./device-registry";
+
 // ============================================
 // AREA REGISTRY TYPES
 // ============================================
-export { type AreaEntry } from "./area-registry";
-// ============================================
-// WEBSOCKET API TYPES
-// ============================================
-// Core types
-export { type WsCommandType, type WsResult, type WsResultSuccess, type WsResultError, type WsEventMessage, type WsPong, type CommandRequest, type CommandFields } from "./websocket";
-// Auth types
-export { type AuthRequired, type Auth, type AuthOk, type AuthInvalid } from "./websocket";
-// Commonly used command types
-export { type CallServiceRequest, type SubscribeEventsRequest, type UnsubscribeEventsRequest, type GetStatesRequest, type GetServicesRequest, type GetConfigRequest, type PingRequest, type FireEventRequest } from "./websocket";
+export type { AreaEntry } from "./area-registry";
 // ============================================
 // CONSTANTS
 // ============================================
 export * from "./constants";
+// ============================================
+// DEVICE REGISTRY TYPES
+// ============================================
+export {
+  CONNECTION_BLUETOOTH,
+  CONNECTION_NETWORK_MAC,
+  CONNECTION_UPNP,
+  CONNECTION_ZIGBEE,
+  type DeviceEntry,
+  type DeviceEntryDisabler,
+  type DeviceEntryType,
+} from "./device-registry";
+export { type Domain, KNOWN_DOMAINS } from "./domains";
+// ============================================
+// ENTITY REGISTRY TYPES
+// ============================================
+export type {
+  EntityCategory,
+  EntityRegistryEntry,
+  RegistryEntryDisabler,
+  RegistryEntryHider,
+} from "./entity-registry";
+// ============================================
+// EVENT TYPES
+// ============================================
+export type { CoreEventType, EventCallServiceData, EventStateChangedData, HAEvent } from "./events";
+export type * from "./services";
+// ============================================
+// SERVICE TYPES
+// ============================================
+export type { ServiceCall, ServiceName, Services } from "./services";
+// ============================================
+// WEBSOCKET API TYPES
+// ============================================
+// Core types
+// Auth types
+// Commonly used command types
+export type {
+  Auth,
+  AuthInvalid,
+  AuthOk,
+  AuthRequired,
+  CallServiceRequest,
+  CommandFields,
+  CommandRequest,
+  FireEventRequest,
+  GetConfigRequest,
+  GetServicesRequest,
+  GetStatesRequest,
+  PingRequest,
+  SubscribeEventsRequest,
+  UnsubscribeEventsRequest,
+  WsCommandType,
+  WsEventMessage,
+  WsPong,
+  WsResult,
+  WsResultError,
+  WsResultSuccess,
+} from "./websocket";

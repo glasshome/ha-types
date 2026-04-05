@@ -1,6 +1,6 @@
 {
   "name": "@glasshome/ha-types",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript type definitions for Home Assistant entities, services, and WebSocket API",
   "type": "module",
   "main": "./dist/index.mjs",
