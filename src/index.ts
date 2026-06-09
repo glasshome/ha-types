@@ -20,6 +20,10 @@ export type { AreaEntry } from "./area-registry";
 // ============================================
 export * from "./constants";
 // ============================================
+// CORE CONFIG TYPES
+// ============================================
+export type { HassConfig, HassUnitSystem } from "./config";
+// ============================================
 // DEVICE REGISTRY TYPES
 // ============================================
 export {
