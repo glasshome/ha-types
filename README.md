@@ -2,7 +2,7 @@
 
 TypeScript type definitions and constants for Home Assistant domains, services, events, and WebSocket API.
 
-Auto-generated from Home Assistant Core source code.
+Auto-generated from Home Assistant Core source code. Part of [GlassHome](https://glasshome.app), the local-first dashboard for Home Assistant.
 
 ## Install
 
