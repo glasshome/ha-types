@@ -1027,7 +1027,7 @@ export type EntityState =
   | typeof STATE_UNLOCKED
   | typeof STATE_UNLOCKING
   | typeof STATE_UP_AND_RUNNING
-  | string; // Allow custom states
+  | (string & {}); // Allow custom states
 
 // ============================================
 // UNIT CONSTANTS

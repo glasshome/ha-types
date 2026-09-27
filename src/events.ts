@@ -28,9 +28,9 @@ export interface EventStateChangedData {
   /** Entity whose state changed */
   entity_id: string;
   /** Previous state (null if entity just appeared) */
-  old_state: unknown | null;
+  old_state: unknown;
   /** New state (null if entity was removed) */
-  new_state: unknown | null;
+  new_state: unknown;
 }
 
 /** Event data for call_service event. */
@@ -46,7 +46,7 @@ export interface EventCallServiceData {
 /** Generic event envelope. */
 export interface HAEvent<T = unknown> {
   /** Event type */
-  event_type: CoreEventType | string;
+  event_type: CoreEventType | (string & {});
   /** Event data */
   data: T;
   /** When the event was fired (ISO 8601) */
