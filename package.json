@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "build": "tsdown",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "check:dead": "fallow dead-code --fail-on-issues"
   },
   "sideEffects": false,
   "keywords": [
@@ -48,6 +49,7 @@
     "version": "2025.12"
   },
   "devDependencies": {
+    "fallow": "3.17.0",
     "tsdown": "^0.22.14",
     "typescript": "^7.0.2"
   }
