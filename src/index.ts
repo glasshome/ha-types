@@ -57,28 +57,4 @@ export type { ServiceCall, ServiceName, Services } from "./services";
 // ============================================
 // WEBSOCKET API TYPES
 // ============================================
-// Core types
-// Auth types
-// Commonly used command types
-export type {
-  Auth,
-  AuthInvalid,
-  AuthOk,
-  AuthRequired,
-  CallServiceRequest,
-  CommandFields,
-  CommandRequest,
-  FireEventRequest,
-  GetConfigRequest,
-  GetServicesRequest,
-  GetStatesRequest,
-  PingRequest,
-  SubscribeEventsRequest,
-  UnsubscribeEventsRequest,
-  WsCommandType,
-  WsEventMessage,
-  WsPong,
-  WsResult,
-  WsResultError,
-  WsResultSuccess,
-} from "./websocket";
+export type * from "./websocket";
