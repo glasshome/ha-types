@@ -2,7 +2,29 @@
   "name": "@glasshome/ha-types",
   "version": "0.2.0",
   "description": "TypeScript type definitions for Home Assistant entities, services, and WebSocket API",
+  "keywords": [
+    "hass",
+    "home-assistant",
+    "iot",
+    "smart-home",
+    "types",
+    "typescript"
+  ],
+  "homepage": "https://github.com/glasshome/ha-types#readme",
+  "bugs": {
+    "url": "https://github.com/glasshome/ha-types/issues"
+  },
+  "license": "MIT",
+  "author": "GlassHome Labs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glasshome/ha-types.git"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "sideEffects": false,
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "exports": {
@@ -12,45 +34,26 @@
       "import": "./dist/index.mjs"
     }
   },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsdown",
-    "lint": "tsc --noEmit",
-    "check:dead": "fallow dead-code --fail-on-issues"
-  },
-  "sideEffects": false,
-  "keywords": [
-    "home-assistant",
-    "typescript",
-    "types",
-    "smart-home",
-    "hass",
-    "iot"
-  ],
-  "homepage": "https://github.com/glasshome/ha-types#readme",
-  "bugs": {
-    "url": "https://github.com/glasshome/ha-types/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/glasshome/ha-types.git"
-  },
-  "author": "GlassHome Labs",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint": "oxlint --type-aware . && oxfmt --check . && tsc --noEmit",
+    "check:dead": "fallow dead-code --fail-on-issues"
+  },
+  "devDependencies": {
+    "fallow": "3.17.0",
+    "oxfmt": "0.65.0",
+    "oxlint": "1.81.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=18"
   },
   "homeAssistant": {
     "version": "2025.12"
-  },
-  "devDependencies": {
-    "fallow": "3.17.0",
-    "tsdown": "^0.22.14",
-    "typescript": "^7.0.2"
   }
 }
