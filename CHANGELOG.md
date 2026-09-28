@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/glasshome/ha-types/compare/v0.2.0...v0.2.1) (2026-09-28)
+
+
+### Miscellaneous Chores
+
+* release 0.2.1 ([bfb8714](https://github.com/glasshome/ha-types/commit/bfb8714c7d8ffd844a27f297f300c90a3d904e05))
+
 ## [0.2.0](https://github.com/glasshome/ha-types/compare/v0.1.2...v0.2.0) (2026-09-27)
 
 
