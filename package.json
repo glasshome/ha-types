@@ -1,6 +1,6 @@
 {
   "name": "@glasshome/ha-types",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "TypeScript type definitions for Home Assistant entities, services, and WebSocket API",
   "keywords": [
     "hass",
